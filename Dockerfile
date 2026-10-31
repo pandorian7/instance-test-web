@@ -16,7 +16,7 @@ RUN pnpm install --frozen-lockfile
 COPY . .
 
 # CTF Flag build argument
-ARG FLAG="FLAG{ctf_default_flag_placeholder_change_via_build_arg}"
+ARG FLAG
 
 # Expose build arg to Vite client-side bundle
 ENV VITE_FLAG=$FLAG
